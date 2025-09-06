@@ -22,3 +22,11 @@ __pycache__/
 .idea/
 .vscode/
 .DS_Store
+
+# Ignore everything in templates
+templates/*
+
+# But keep these files
+!templates/cv_template_lorem.html
+!templates/core_info_lorem.txt
+!templates/reference_cv_lorem.txt

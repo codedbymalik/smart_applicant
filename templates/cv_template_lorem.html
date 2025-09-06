@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Lebenslauf Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', 'Calibri', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11px;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+            min-height: 297mm;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0061a8;
+            padding-bottom: 15px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0061a8;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            font-size: 10px;
+            color: #666;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0061a8;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .job {
+            margin-bottom: 12px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 11px;
+        }
+
+        .job-period {
+            font-size: 10px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .company {
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+
+        .location {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .achievements {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .achievements li {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+            font-size: 10px;
+        }
+
+        .achievements li:before {
+            content: "•";
+            color: #0061a8;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 10px;
+        }
+
+        .skill-category {
+            margin-bottom: 8px;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 3px;
+            font-size: 10px;
+        }
+
+        .skill-list {
+            color: #4a5568;
+            line-height: 1.3;
+        }
+
+        .education-item {
+            margin-bottom: 10px;
+        }
+
+        .degree {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 11px;
+        }
+
+        .university {
+            color: #4a5568;
+            font-size: 10px;
+        }
+
+        .edu-details {
+            font-size: 10px;
+            color: #666;
+            margin-top: 2px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .project {
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+
+        .project-tech {
+            font-size: 9px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+
+        .project-desc {
+            font-size: 10px;
+            color: #4a5568;
+        }
+
+        .languages {
+            display: flex;
+            gap: 20px;
+            font-size: 10px;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 10px;
+        }
+
+        .highlight {
+            background-color: #f0f8ff;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        .azure-highlight {
+            background-color: #e8f4fd;
+            padding: 2px 4px;
+            border-radius: 2px;
+            font-weight: 600;
+        }
+
+        @media print {
+            body { margin: 0; }
+            .container {
+                margin: 0;
+                padding: 10mm;
+                max-width: none;
+            }
+            .download-btn { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">LOREM IPSUM DOLOR</div>
+            <div class="title">Senior Data Engineer - Cloud & Analytics Platforms</div>
+            <div class="contact">
+                lorem.ipsum@email.com | +49 XXX XXXXXXX | München, Deutschland | <a href="https://www.linkedin.com/in/lorem-ipsum/" target="_blank" style="color: #0061a8; text-decoration: none;">linkedin.com/in/lorem-ipsum</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Berufliches Profil</div>
+            <p style="font-size: 10px; color: #4a5568; text-align: justify;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et <span class="azure-highlight">dolore magna aliqua, Apache Spark und ETL/ELT-Pipeline-Entwicklung</span>. Ut enim ad minim veniam, quis nostrud exercitation <span class="azure-highlight">ullamco laboris nisi ut aliquip ex ea commodo</span> consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <span class="highlight">dolore eu fugiat nulla pariatur</span>. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="azure-highlight">Sed ut perspiciatis unde omnis iste natus, Spark, Azure Cloud Services</span> et dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technische Kompetenzen</div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Data Engineering & ETL:</div>
+                        <div class="skill-list"><span class="azure-highlight">Azure Databricks, Apache Spark (PySpark)</span>, ETL/ELT-Pipelines, Data Factory, Airflow, <span class="azure-highlight">Kimball Data Modeling</span>, Data Vault (Advanced)</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Programmierung & Scripting:</div>
+                        <div class="skill-list">Python (Expert), <span class="azure-highlight">Scala (Intermediate)</span>, SQL (Advanced), pandas, PySpark, pytest, Flask</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Cloud & Azure Services:</div>
+                        <div class="skill-list"><span class="azure-highlight">Azure Data Lake Storage, Azure SQL Database, Azure Synapse Analytics</span>, AWS (Transferable), Kubernetes, Docker</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Databases & Storage:</div>
+                        <div class="skill-list">PostgreSQL, MySQL, <span class="azure-highlight">Azure SQL, Delta Lake</span>, Data Warehouse Design, Database Optimization, NoSQL (MongoDB)</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Data Quality & Monitoring:</div>
+                        <div class="skill-list">Data Quality Frameworks, <span class="azure-highlight">Azure Monitor</span>, Data Validation, Error Handling, Performance Tuning</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Agile & Collaboration:</div>
+                        <div class="skill-list">Git, CI/CD, <span class="azure-highlight">Agile Methodologies</span>, Stakeholder Communication, Technical Documentation, German (C1)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Data Engineering Projekte</div>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-title">Lorem Ipsum ETL Pipeline mit Dimensional Modeling</div>
+                    <div class="project-tech">Azure Databricks, PySpark, Azure Data Lake Storage Gen2, Delta Lake, Azure SQL Database, Python</div>
+                    <div class="project-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation <strong>ullamco laboris nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate velit esse cillum:</strong> dolore eu fugiat nulla pariatur, excepteur sint occaecat cupidatat non proident. <strong>Ergebnis:</strong> 65% schnellere Abfragezeiten durch optimierte Strukturen, 99.7% Datenqualität durch implementierte Validierung, Reduzierung der Pipeline-Laufzeit von 4h auf 45min.</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Data Lakehouse Architecture mit Bronze-Silver-Gold Pattern</div>
+                    <div class="project-tech">Azure Data Factory, PySpark, Delta Lake, Azure Synapse Analytics, Apache Airflow, SQL</div>
+                    <div class="project-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium: <strong>Bronze</strong> (totam rem aperiam), <strong>Silver</strong> (eaque ipsa quae ab illo), <strong>Gold</strong> (inventore veritatis et quasi). Architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. <strong>Datenqualitätstechniken:</strong> quia voluptas sit aspernatur, aut odit aut fugit sed quia, consequuntur magni dolores eos qui ratione voluptatem. <strong>Ergebnis:</strong> Zentrale Datenverfügbarkeit für 25+ Analytics-Teams, 80% Reduzierung der Datenbereitstellungszeit von 6h auf 1h.</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Multi-Source Data Integration mit Data Vault 2.0</div>
+                    <div class="project-tech">Azure Data Factory, SQL Server, Python, Azure SQL Database, Data Vault 2.0, PowerBI</div>
+                    <div class="project-desc">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet consectetur adipisci velit sed quia <strong>Data Vault 2.0 Methodology</strong>. Non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. <strong>ETL-Optimierungen:</strong> ut aliquip ex ea commodo consequat duis aute irure dolor, in reprehenderit in voluptate velit esse cillum. <strong>Performance-Tuning:</strong> dolore eu fugiat nulla pariatur excepteur sint occaecat. <strong>Ergebnis:</strong> 100% Datenrückverfolgbarkeit für Compliance-Anforderungen, 70% Verbesserung der Reportinggenauigkeit.</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Automatisierte ETL-Pipeline mit Quality Monitoring</div>
+                    <div class="project-tech">Apache Spark, Python, PostgreSQL, Apache Airflow, Great Expectations, Grafana</div>
+                    <div class="project-desc">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti <strong>Great Expectations</strong> quos dolores et quas molestias excepturi sint. Occaecati cupiditate non provident similique sunt in culpa qui officia deserunt. <strong>Monitoring & Alerting:</strong> mollitia animi id est laborum et dolorum fuga et harum quidem rerum facilis. <strong>Skalierungstechniken:</strong> est et expedita distinctio nam libero tempore cum soluta nobis. <strong>Ergebnis:</strong> 99.5% Pipeline-Verfügbarkeit, 90% Reduzierung manueller Validierung.</div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Kubernetes-based Microservices Data Platform</div>
+                    <div class="project-tech">Kubernetes, Docker, Python Flask, Apache Kafka, Redis, PostgreSQL, Prometheus</div>
+                    <div class="project-desc">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae <strong>Custom Pod Autoscaler (CPA)</strong> non recusandae itaque earum rerum. Hic tenetur a sapiente delectus ut aut reiciendis voluptatibus maiores alias consequatur. <strong>DevOps-Techniken:</strong> aut perferendis doloribus asperiores repellat sed ut perspiciatis unde omnis. <strong>Monitoring & Observability:</strong> iste natus error sit voluptatem accusantium doloremque laudantium. <strong>Ergebnis:</strong> Horizontale Skalierung von 2-50 Pods, 40% bessere Resource-Utilization, 99.9% Service-Verfügbarkeit.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Berufserfahrung</div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Senior Data Engineer</div>
+                        <div class="company">Lorem Ipsum Technologies GmbH</div>
+                        <div class="location">München, Deutschland</div>
+                    </div>
+                    <div class="job-period">Jan 2022 - Laufend</div>
+                </div>
+                <ul class="achievements">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+                    <li>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</li>
+                    <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</li>
+                    <li>Totam rem aperiam eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</li>
+                    <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Data Engineer</div>
+                        <div class="company">Dolor Sit Amet Analytics</div>
+                        <div class="location">Berlin, Deutschland</div>
+                    </div>
+                    <div class="job-period">Mar 2020 - Dez 2021</div>
+                </div>
+                <ul class="achievements">
+                    <li>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</li>
+                    <li>Sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem</li>
+                    <li>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam</li>
+                    <li>Nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Ausbildung</div>
+
+            <div class="education-item">
+                <div class="degree">Master of Science in Data Engineering</div>
+                <div class="university">Universität Lorem Ipsum</div>
+                <div class="edu-details">
+                    München, Deutschland | Sep 2018 - Feb 2020 <br>
+                    <strong>Schwerpunkte:</strong> <span class="azure-highlight">Cloud Computing, Distributed Systems, Machine Learning</span>, Advanced Algorithms, Database Systems<br>
+                    <strong>Relevanter Fokus:</strong> <span class="azure-highlight">Big Data Analytics, Real-time Processing, Data Architecture</span>, DevOps Methods, Enterprise Software
+                </div>
+            </div>
+
+            <div class="education-item">
+                <div class="degree">Bachelor of Science in Computer Science</div>
+                <div class="university">Dolor Sit Amet Universität</div>
+                <div class="edu-details">
+                    Hamburg, Deutschland | Sep 2014 - Jul 2018 <br>
+                    <strong>Kernfächer:</strong> Datenstrukturen, Algorithmen, <span class="azure-highlight">Datenbankmanagement, Software Engineering</span>, Mathematics<br>
+                    <strong>Abschlussprojekt:</strong> "Scalable Lorem Ipsum Processing System" - Implementation eines distributed data processing systems mit Apache Spark
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Zertifizierungen & Weiterbildung</div>
+            <div class="certifications">
+                <div>
+                    <div class="skill-category-title">Cloud & Data Engineering:</div>
+                    <div style="color: #4a5568;">
+                        • <span class="azure-highlight">Azure Data Engineer Associate (DP-203)</span><br>
+                        • AWS Certified Big Data - Specialty<br>
+                        • Google Cloud Professional Data Engineer<br>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category-title">Technische Spezialisierungen:</div>
+                    <div style="color: #4a5568;">
+                        • Advanced ETL/ELT Pipeline Development<br>
+                        • Certified Kubernetes Administrator (CKA)<br>
+                        • Apache Spark Developer Certification<br>
+                        • Data Vault 2.0 Practitioner<br>
+                        • Agile Data Engineering Methods<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Zusätzliche Qualifikationen</div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 10px;">
+                <div>
+                    <div class="skill-category-title">Sprachkenntnisse & Kommunikation:</div>
+                    <div class="languages" style="flex-direction: column; gap: 5px;">
+                        <span><strong>Deutsch:</strong> Muttersprache</span>
+                        <span><strong>Englisch:</strong> Fließend (C2)</span>
+                        <span><strong>Französisch:</strong> Grundkenntnisse (A2)</span>
+                        <span><strong>Stakeholder-Management:</strong> Erfahrung mit cross-functional teams und technical documentation</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category-title">Verfügbarkeit & Eigenschaften:</div>
+                    <div>
+                        <strong>Status:</strong> Sofort verfügbar<br>
+                        <strong>Arbeitserlaubnis:</strong> EU-Bürger<br>
+                        <strong>Lernbereitschaft:</strong> Kontinuierliche Weiterbildung in emerging technologies<br>
+                        <strong>Teamarbeit:</strong> Agile Arbeitsweise, selbstorganisiert, leadership skills
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function printResume() {
+            window.print();
+        }
+        
+        function addDownloadButton() {
+            const button = document.createElement('button');
+            button.textContent = '📄 Lebenslauf als PDF herunterladen';
+            button.className = 'download-btn';
+            button.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #0061a8;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                transition: all 0.3s ease;
+            `;
+            button.onmouseover = () => button.style.background = '#004d87';
+            button.onmouseout = () => button.style.background = '#0061a8';
+            button.onclick = printResume;
+            document.body.appendChild(button);
+        }
+        
+        window.onload = addDownloadButton;
+    </script>
+</body>
+</html>

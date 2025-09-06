@@ -1,41 +1,89 @@
 # app.py
 import streamlit as st
-from logic import run_job_application_logic, MODELS
+import os
+from pathlib import Path
+# Import the core logic from your logic file
+from logic import run_job_application_logic
 
-# --- Page Configuration ---
-st.set_page_config(page_title="AI Job Automator", page_icon="🤖", layout="wide")
+# --- Streamlit Page Configuration ---
+st.set_page_config(page_title="AI Job Application Assistant", layout="wide")
 
-# --- App UI ---
-st.title("🤖 AI Job Application Automator")
-st.markdown("Paste a job description, choose your AI provider, and generate tailored application documents.")
+st.title("🤖 AI Job Application Assistant")
+st.markdown(
+    "Paste a job description below, choose your AI provider, and get a tailored CV and Cover Letter generated for you.")
 
-col1, col2 = st.columns([2, 1])
+# --- Sidebar for Configuration ---
+with st.sidebar:
+    st.header("Configuration")
+    ai_provider = st.selectbox("Choose AI Provider", ("gemini", "claude"),
+                               help="Select the AI service you want to use.")
 
-with col1:
-    jd_text = st.text_area("Paste the Full Job Description Here:", height=450, placeholder="Paste JD here...")
+    st.markdown("---")
+    st.subheader("API Keys")
+    st.info("Your API keys are already stored and hence no action is needed.")
+    # Get API keys from the user
+    # gemini_api_key = st.text_input("Gemini API Key", type="password", help="Required if you choose Gemini.")
+    # anthropic_api_key = st.text_input("Anthropic API Key", type="password", help="Required if you choose Claude.")
+    anthropic_api_key = os.getenv("ANTHROPIC_API_KEY")
+    gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-with col2:
-    ai_provider = st.radio(
-        "Select AI Provider:", options=list(MODELS.keys()), index=0, horizontal=True
-    )
-    st.info(f"Using **{MODELS[ai_provider]['powerful']}** for content generation.")
-    process_button = st.button("✨ Generate Application Documents", type="primary", use_container_width=True)
+    # Optional check
+    if not anthropic_api_key and not gemini_api_key:
+        st.error("API keys not found. Please add them to your .env file.")
 
-st.markdown("---")
-st.subheader("Live Console Log")
-status_placeholder = st.empty()
+# --- Main Area for Input and Generation ---
+jd_text = st.text_area("Paste the full Job Description here", height=350)
 
-# --- Processing Logic ---
-if process_button:
-    st.session_state.status_messages = []
-    def status_callback(message, status_type):
-        """This function is passed to the logic to report progress to the Streamlit UI."""
-        emojis = {"info": "▶️", "success": "✅", "error": "❌", "working": "⚙️"}
-        st.session_state.status_messages.append(f"{emojis.get(status_type, '▶️')} {message}")
-        messages_string = "\n".join(st.session_state.status_messages)
-        status_placeholder.markdown(f"```\n{messages_string}\n```")
+if st.button("✨ Generate Application Documents"):
+    # --- Input Validation ---
+    valid_input = True
+    if not jd_text.strip():
+        st.error("Please paste a job description into the text area.")
+        valid_input = False
 
-    status_placeholder.markdown("```\n \n```") # Clear previous log
-    run_job_application_logic(ai_provider, jd_text, status_callback)
-else:
-    status_placeholder.markdown("```\n▶️ Waiting for a new job to process...\n```")
+    if ai_provider == "gemini" and not gemini_api_key:
+        st.error("Please enter your Gemini API Key in the sidebar to proceed.")
+        valid_input = False
+    elif ai_provider == "claude" and not anthropic_api_key:
+        st.error("Please enter your Anthropic API Key in the sidebar to proceed.")
+        valid_input = False
+
+    if valid_input:
+        # Set API keys as environment variables for the logic module to securely access them
+        if gemini_api_key:
+            os.environ["GEMINI_API_KEY"] = gemini_api_key
+        if anthropic_api_key:
+            os.environ["ANTHROPIC_API_KEY"] = anthropic_api_key
+
+        # Use st.status to show live progress updates from the logic file
+        with st.status("Starting the application process...", expanded=True) as status:
+
+            # This callback function allows the logic file to send updates to the UI
+            def status_callback(message, status_type="info"):
+                if status_type == "success":
+                    st.write(f"✅ {message}")
+                elif status_type == "error":
+                    st.write(f"❌ {message}")
+                    status.update(label=f"Error: {message}", state="error")
+                elif status_type == "working":
+                    st.write(f"⚙️ {message}")
+                else:  # info
+                    st.write(f"▶️ {message}")
+
+
+            try:
+                # Execute the main logic and get the output path
+                output_path = run_job_application_logic(ai_provider, jd_text, status_callback)
+
+                if output_path:
+                    status.update(label="Process completed successfully!", state="complete")
+                    st.success("All documents have been generated and saved!")
+                    # Provide the user with the exact location of their files
+                    st.info(f"You can find your files in your home directory here: {output_path}")
+                else:
+                    # An error was caught and reported by the callback
+                    st.error("The process failed. Please check the messages above for details.")
+                    status.update(label="Process failed.", state="error")
+            except Exception as e:
+                st.error(f"An unexpected error occurred: {e}")
+                status.update(label="An unexpected critical error occurred.", state="error")

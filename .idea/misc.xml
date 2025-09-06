@@ -3,6 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="Python 3.11 (Job_Automator)" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{}]]></component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (Job_Automator)" project-jdk-type="Python SDK" />
 </project>
