@@ -2,4 +2,5 @@ anthropic
 pdfplumber
 weasyprint
 google-generativeai
+streamlit
 python-dotenv

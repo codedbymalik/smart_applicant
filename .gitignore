@@ -1,4 +1,24 @@
+# --- User-Generated Content ---
+# Ignore the output directory for generated applications. This is critical for privacy.
+Job Applications/
+
+# --- Environment and Secrets ---
+# Ignore the virtual environment folder. It's specific to your machine.
 .venv/
+venv/
+
+# Ignore the file containing secret API keys. NEVER commit this.
+.env
+
+# --- Python Cache and Compiled Files ---
+# These are generated automatically by Python.
 __pycache__/
 *.pyc
-.env
+*.pyo
+*.pyd
+
+# --- IDE/Editor and OS Specific Files ---
+# These are specific to your setup and don't belong in the project.
+.idea/
+.vscode/
+.DS_Store
