@@ -1,40 +1,31 @@
 Malik Zohaib Hassan
 Max Planck Ring 18
 98693 Ilmenau
-Deutschland
-Tel.: +49 178 3576366
-E-Mail: zohaibmalikofficial@gmail.com
-
 
 Statista GmbH
 Personalabteilung
 Johannes-Brahms-Platz 1
 20355 Hamburg
 
+06.09.2025
 
-Hamburg, 06. September 2025
-
-
-**Betreff: Bewerbung als Working Student - Tech Office (Support to Chief of Staff to the CTO)**
-
+Bewerbung um die Werkstudentenstelle - Tech Office (Support to Chief of Staff to the CTO)
 
 Sehr geehrte Damen und Herren,
 
-als aktueller Master-Student der Computer and Systems Engineering an der TU Ilmenau mit ausgeprägter Leidenschaft für strategische Technologieführung bewerbe ich mich mit großer Begeisterung um die Position als Working Student im Tech Office zur Unterstützung des Chief of Staff to the CTO bei Statista.
+mit großem Interesse habe ich Ihre Stellenanzeige für die Werkstudentenstelle im Tech Office (Support to Chief of Staff to the CTO) auf Ihrer Webseite gelesen und bewerbe mich hiermit um diese Position.  Mein Profil als angehender Data Engineer mit Fokus auf Cloud Computing und System Security deckt sich hervorragend mit den Anforderungen Ihres Stellenprofils.
 
-Ihre Stellenausschreibung hat mein besonderes Interesse geweckt, da sie perfekt zu meinen Kernkompetenzen in strategischer Projektunterstützung, Executive-Level-Kommunikation und organisatorischer Exzellenz passt. In meiner mehrjährigen Tätigkeit als Technology Project Coordinator bei FixRunner habe ich umfangreiche Erfahrungen in der Unterstützung von Führungskräften auf Executive-Ebene gesammelt. Dabei habe ich erfolgreich OKR-Planungsprozesse koordiniert, strategische Initiativen über 8 funktionsübergreifende Teams hinweg gesteuert und komplexe technische Informationen in prägnante Executive-Briefings für Führungskräfte synthetisiert.
+Aktuell studiere ich im Masterstudiengang Computer and Systems Engineering an der TU Ilmenau und vertiefte mich in den letzten Semestern intensiv in die Bereiche Cloud Computing, Software Safety und System Security.  Die von Ihnen beschriebenen Aufgaben im Projekt-Support, der Präsentationsvorbereitung und der operativen Unterstützung des Chief of Staff to the CTO sehe ich als ideale Ergänzung zu meinem Studium und eine ausgezeichnete Möglichkeit, meine theoretischen Kenntnisse in der Praxis anzuwenden und zu erweitern.
 
-Meine analytischen Fähigkeiten konnte ich besonders bei der Entwicklung und Durchführung von Leadership-Events und der Optimierung von Kommunikationsformaten unter Beweis stellen. So habe ich erfolgreich Technologie-Team-Offsites für über 200 Teilnehmer geplant und durchgeführt sowie die Effektivität von Führungsveranstaltungen um 35% gesteigert. Dabei nutzte ich fortgeschrittene MS Office-Kenntnisse, insbesondere PowerPoint und Excel, zur Erstellung von Executive-ready Visualisierungen und strategischen Analysen.
+Meine bisherigen Erfahrungen im Bereich Data Engineering, insbesondere meine Expertise mit Azure Databricks, PySpark und ETL/ELT-Pipelines, qualifizieren mich für die Mitarbeit an strategischen Initiativen wie OKR-Planung und -Steuerung.  Beispielsweise konnte ich im Rahmen eines Projekts zur Entwicklung einer Retail-Analytics-Pipeline die Abfragezeiten um 65% beschleunigen, indem ich Kimball Star-Schema implementierte und Delta Lake für ACID-Transaktionen nutzte.  Diese Erfahrung im Umgang mit großen Datenmengen und komplexen Datenstrukturen wird mir auch bei der Aufbereitung von Berichten und Präsentationen für das Management zugutekommen.
 
-Ein besonderer Schwerpunkt meiner Arbeit lag in der Bewältigung von Ad-hoc-Anfragen der Führungsebene. In über 2.600 Projekten habe ich konsistent dringende Präsentationen und Analysen innerhalb von 24-48 Stunden geliefert und dabei eine Stakeholder-Zufriedenheit von 98% erreicht. Diese Erfahrung hat meine Fähigkeit gestärkt, mehrere Aufgaben selbstständig zu verwalten und unter Zeitdruck qualitativ hochwertige Ergebnisse zu liefern – Kompetenzen, die für die Unterstützung des CTO-Büros essentiell sind.
+Neben meinen technischen Fähigkeiten verfüge ich über ausgeprägte analytische Fähigkeiten und eine strukturierte Arbeitsweise, die mir ermöglicht, komplexe Sachverhalte schnell zu erfassen und prägnant darzustellen.  Durch meine Tätigkeit als Data Engineer/WordPress Developer bei FixRunner konnte ich meine Fähigkeiten in der internationalen und remotebasierten Zusammenarbeit mit verschiedenen Projektmanagement-Tools wie Git und Asana unter Beweis stellen.  Die dort gesammelte Erfahrung in der Dokumentation technischer Implementierungen und der Kommunikation mit Stakeholdern sehe ich als wertvolle Grundlage für die erfolgreiche Zusammenarbeit im Tech Office.
 
-Meine technische Expertise in Cloud Computing, Distributed Systems und Advanced Algorithms aus dem Master-Studium ermöglicht es mir, komplexe technische Konzepte schnell zu erfassen und für strategische Entscheidungsprozesse aufzubereiten. Zusätzlich bringe ich praktische Erfahrungen mit Collaboration-Tools wie Confluence, Jira und verschiedenen Projektmanagement-Plattformen mit, die ich in internationalen, schnelllebigen Arbeitsumgebungen erfolgreich eingesetzt habe.
+Besonders reizt mich die Möglichkeit, im Tech Office von Statista Einblicke in die strategischen Geschäftsabläufe auf Executive-Level zu erhalten und aktiv an der Gestaltung zukunftsweisender Projekte mitzuwirken.  Meine hohe Lernbereitschaft, meine proaktive Arbeitsweise und mein Enthusiasmus für Data Engineering machen mich zu einem wertvollen Mitglied Ihres Teams.
 
-Besonders reizvoll finde ich die Möglichkeit, bei Statista Einblicke in die strategische Steuerung einer Technologieorganisation auf Executive-Level zu gewinnen und zur Förderung von operationeller Exzellenz beizutragen. Meine proaktive Arbeitsweise, ausgeprägte Detailgenauigkeit und kollaborative Denkweise passen ideal zu Ihren Anforderungen an einen Working Student, der wirkungsvolle Projekte unterstützt und zur organisatorischen Ausrichtung des CTO-Bereichs beiträgt.
+Über eine Einladung zu einem persönlichen Gespräch freue ich mich sehr.
 
-Die Werte von Statista – Vielfalt zu schätzen und faktenbasierte Entscheidungen zu fördern – entsprechen vollkommen meiner beruflichen Philosophie. Ich bin überzeugt davon, dass meine Kombination aus strategischer Projektunterstützung, Executive-Communication-Fähigkeiten und technischem Verständnis einen wertvollen Beitrag zum Erfolg Ihres Tech Office leisten kann.
+Mit freundlichen Grüßen
 
-Über die Gelegenheit zu einem persönlichen Gespräch würde ich mich sehr freuen.
 
-Mit freundlichen Grüßen,
 Malik Zohaib Hassan

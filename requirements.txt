@@ -1,4 +1,5 @@
 anthropic
 pdfplumber
 weasyprint
+google-generativeai
 python-dotenv
