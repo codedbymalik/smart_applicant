@@ -1,0 +1,4 @@
+anthropic
+pdfplumber
+weasyprint
+python-dotenv

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malik Zohaib Hassan - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Calibri', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            background: white;
+            font-size: 11px;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15mm;
+            background: white;
+            min-height: 297mm;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #2c5282;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c5282;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 14px;
+            color: #4a5568;
+            margin-bottom: 10px;
+        }
+        
+        .contact {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .section {
+            margin-bottom: 18px;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #2c5282;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        
+        .job {
+            margin-bottom: 12px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 3px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 11px;
+        }
+        
+        .job-period {
+            font-size: 10px;
+            color: #666;
+            white-space: nowrap;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #4a5568;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+        
+        .location {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .achievements {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .achievements li {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            position: relative;
+            font-size: 10px;
+        }
+        
+        .achievements li:before {
+            content: "•";
+            color: #2c5282;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            font-size: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 8px;
+        }
+        
+        .skill-category-title {
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 3px;
+            font-size: 10px;
+        }
+        
+        .skill-list {
+            color: #4a5568;
+            line-height: 1.3;
+        }
+        
+        .education-item {
+            margin-bottom: 10px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 11px;
+        }
+        
+        .university {
+            color: #4a5568;
+            font-size: 10px;
+        }
+        
+        .edu-details {
+            font-size: 10px;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        
+        .project {
+            margin-bottom: 8px;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #2d3748;
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+        
+        .project-tech {
+            font-size: 9px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 3px;
+        }
+        
+        .project-desc {
+            font-size: 10px;
+            color: #4a5568;
+        }
+        
+        .languages {
+            display: flex;
+            gap: 20px;
+            font-size: 10px;
+        }
+        
+        .page-break {
+            page-break-before: always;
+        }
+        
+        .certifications {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            font-size: 10px;
+        }
+        
+        @media print {
+            body { margin: 0; }
+            .container { 
+                margin: 0; 
+                padding: 10mm;
+                max-width: none;
+            }
+            .download-btn { display: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="name">MALIK ZOHAIB HASSAN</div>
+            <div class="title">Senior WordPress Developer</div>
+            <div class="contact">
+                zohaibmalikofficial@gmail.com | +491783576366 | Germany | Open to Remote
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <p style="font-size: 10px; color: #4a5568; text-align: justify;">
+                Results-driven WordPress developer with a strong foundation in plugin architecture, custom plugin and theme development, and modern PHP (OOP, namespacing, autoloading). Adept at both front-end (JavaScript ES6, jQuery, CSS3, HTML5) and back-end development, including API integrations and performance optimization. Proven experience shipping features end-to-end, iterating rapidly, and collaborating in remote, cross-functional teams. Strong communicator, proactive in taking ownership of features, and passionate about building scalable solutions that keep code quality and simplicity at the core.
+            </p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+                <div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">WordPress Development:</div>
+                        <div class="skill-list">Custom Themes and Plugins, WooCommerce, ACF, REST API, WordPress Multisite, WordPress Coding Standards</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Frontend Technologies:</div>
+                        <div class="skill-list">HTML5, CSS3, JavaScript (ES6), jQuery, Elementor, Divi, WPBakery, Gutenberg, Responsive and Adaptive Design</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Backend & Tools:</div>
+                        <div class="skill-list">PHP (OOP), MySQL, Git, GitHub, Composer, NPM, Gulp, Webpack, API Integrations</div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Performance & Security:</div>
+                        <div class="skill-list">Speed Optimization, Caching, Core Web Vitals, Cloudflare, CDN, SSL, WAF, Sucuri</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Hosting & DevOps:</div>
+                        <div class="skill-list">cPanel, NGINX, Apache, SSH, WP-CLI, Site Migration, Database Management, Deployment Pipelines</div>
+                    </div>
+                    <div class="skill-category">
+                        <div class="skill-category-title">Support & Communications:</div>
+                        <div class="skill-list">Troubleshooting, Customer Support (Zendesk, HelpScout), Remote Team Work (Slack, Asana, Trello), Technical Documentation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">WordPress Developer</div>
+                        <div class="company">FixRunner</div>
+                        <div class="location">United States (Remote)</div>
+                    </div>
+                    <div class="job-period">Nov 2021 - Apr 2025</div>
+                </div>
+                <ul class="achievements">
+                    <li>Engineered and customized WordPress themes and plugins to meet unique client requirements, following WordPress coding standards and best practices</li>
+                    <li>Developed and optimized WooCommerce stores, custom post types, and advanced functionalities using PHP, JavaScript, and Advanced Custom Fields (ACF)</li>
+                    <li>Improved site performance through advanced caching strategies, database optimization, and integration of CDN solutions (Cloudflare, Sucuri), achieving significant speed improvements</li>
+                    <li>Diagnosed and resolved complex bugs, plugin/theme conflicts, and security vulnerabilities across 2,600+ projects, ensuring optimal site functionality and security</li>
+                    <li>Implemented responsive, mobile-first frontends with Elementor, Divi, and Gutenberg, ensuring cross-browser compatibility and optimal user experience</li>
+                    <li>Collaborated remotely with global teams, managed projects via Git, GitHub, and Asana, and provided clear technical documentation for all deliverables</li>
+                    <li>Integrated third-party APIs, set up automation workflows, and maintained seamless deployment pipelines for efficient project delivery</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Key Projects & Achievements</div>
+            <div class="projects-grid">
+                <div class="project">
+                    <div class="project-title">Custom Content Scheduler Plugin - LabQ International Pvt Ltd</div>
+                    <div class="project-tech">WordPress, PHP (OOP), Custom Plugin Development, Slack API Integration</div>
+                    <div class="project-desc">Developed a bespoke plugin for Labq's digital marketing agency to automate the publishing and expiration of time-sensitive promotional content across multiple custom post types. Features included a user-friendly admin interface for scheduling, automatic status changes (publish/draft), and integration with the agency's Slack workspace for real-time notifications to the content team. Implemented robust role-based permissions and detailed logging for compliance tracking. Resulted in a 40% reduction in manual scheduling errors and improved campaign coordination across the agency's portfolio of client sites.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Education</div>
+            
+            <div class="education-item">
+                <div class="degree">Master of Research in Computer and Systems Engineering</div>
+                <div class="university">Technische Universität Ilmenau (TU Ilmenau)</div>
+                <div class="edu-details">
+                    Ilmenau, Germany | Oct 2024 - Present <br>
+                    <strong>Focus Areas:</strong> Systems Engineering, Advanced Software Architecture, Research Methodologies, Computer Systems
+                </div>
+            </div>
+            
+            <div class="education-item">
+                <div class="degree">Bachelor of Science in Computer Science</div>
+                <div class="university">COMSATS University</div>
+                <div class="edu-details">
+                    Islamabad, Pakistan | Feb 2019 - Feb 2023 <br>
+                    <strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Management, Software Engineering, Object-Oriented Programming, Web Development<br>
+                    <strong>Projects:</strong> Focused on systems engineering, networking, and infrastructure management. Worked on projects involving virtualization, database management, and network security
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Core Competencies</div>
+            <div class="certifications">
+                <div>
+                    <div class="skill-category-title">Technical Expertise:</div>
+                    <div style="color: #4a5568;">
+                        • WordPress Plugin Architecture<br>
+                        • Custom Theme Development<br>
+                        • WooCommerce Customization<br>
+                        • Performance Optimization<br>
+                        • Security Implementation
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category-title">Professional Skills:</div>
+                    <div style="color: #4a5568;">
+                        • Remote Team Collaboration<br>
+                        • Project Management<br>
+                        • Client Communication<br>
+                        • Problem Solving<br>
+                        • Quality Assurance
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Additional Qualifications</div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 10px;">
+                <div>
+                    <div class="skill-category-title">Language Proficiency:</div>
+                    <div class="languages" style="flex-direction: column; gap: 5px;">
+                        <span><strong>English:</strong> Fluent (Written and Spoken)</span>
+                        <span><strong>German:</strong> A2 (Learning B1)</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="skill-category-title">Work Authorization:</div>
+                    <div>
+                        Authorized to work in Germany<br>
+                        <strong>Availability:</strong> Immediate<br>
+                        <strong>Relocation:</strong> Europe-wide
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px; font-size: 9px; color: #666; border-top: 1px solid #e2e8f0; padding-top: 10px;">
+            <strong>Professional References Available Upon Request</strong> | Updated: August 2025 | Ready for Remote Opportunities
+        </div>
+    </div>
+
+    <script>
+        // Add print functionality
+        function printResume() {
+            window.print();
+        }
+        
+        // Add download button
+        function addDownloadButton() {
+            const button = document.createElement('button');
+            button.textContent = '📄 Download PDF Resume';
+            button.className = 'download-btn';
+            button.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #2c5282;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 14px;
+                font-weight: bold;
+                z-index: 1000;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                transition: all 0.3s ease;
+            `;
+            button.onmouseover = () => button.style.background = '#2a4d7a';
+            button.onmouseout = () => button.style.background = '#2c5282';
+            button.onclick = printResume;
+            document.body.appendChild(button);
+        }
+        
+        // Add button when page loads
+        window.onload = addDownloadButton;
+    </script>
+</body>
+</html>
